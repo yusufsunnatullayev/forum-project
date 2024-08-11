@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mian.css" />
+    <title>Forum</title>
+  </head>
+  <body>
+    <section class="login flex-center">
+      <div class="login-wrapper flex-col">
+        <div class="logo flex-center">
+          <img src="../images/logo.svg" alt="" />
+          <a href="../index.html"><h1>REFORUMCMS</h1></a>
+        </div>
+        <div class="horizontal-line"></div>
+        <form class="flex-col-center" style="gap: 10px">
+          <h1 class="login-header btn-category-text">Войдите в свой аккаунт</h1>
+          <div class="input-wrapper flex-start-horizontal" style="gap: 11px">
+            <img src="../icons/user.svg" alt="" />
+            <input type="text" placeholder="Введите ваш логин" />
+          </div>
+          <div class="input-wrapper flex-start-horizontal" style="gap: 11px">
+            <img src="../icons/lock.svg" alt="" />
+            <input type="text" placeholder="Введите ваш пароль" />
+          </div>
+          <div class="chek-out flex-between">
+            <div class="check-left flex-center" style="gap: 10px">
+              <input class="memorize-checkbox" id="memorize" type="checkbox" />
+              <label class="text" for="memorize">Запомнить меня</label>
+            </div>
+            <span style="color: var(--greenColor)">Забыли пароль?</span>
+          </div>
+          <button
+            class="btn"
+            style="background-color: var(--greenColor); width: 100%"
+          >
+            Войти на сайт
+          </button>
+          <div class="otherwise flex-center" style="gap: 10px">
+            <div class="horizontal-line"></div>
+            <span>или</span>
+            <div class="horizontal-line"></div>
+          </div>
+          <button
+            class="btn"
+            style="background-color: var(--bgColor4); width: 100%"
+          >
+            Зарегистрируйтесь
+          </button>
+        </form>
+        <div class="back-to-main flex-center" style="gap: 10px">
+          <img src="../icons/arrow-left.svg" alt="" />
+          <span class="text"><a href="../index.html">Назад</a></span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

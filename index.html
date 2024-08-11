@@ -3,312 +3,373 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS Link 🚩 -->
+    <link rel="icon" type="image/svg" href="./images/logo.svg" />
     <link rel="stylesheet" href="./css/mian.css" />
-    <title>Renomicms</title>
-    <!-- Favicon 🚩 -->
-    <link rel="icon" type="image/png" href="/img/favicon1.png" />
+    <title>Forum</title>
   </head>
   <body>
     <!-- Navbar 🚩 -->
     <nav>
       <div class="container">
-        <div class="nav-wrapper">
-          <!-- Left 🚩 -->
-          <div class="left">
-            <div class="logo">
-              <img src="./img/logo.svg" alt="logo" />
-            </div>
-            <div class="notification-icons">
-              <img src="./icons/envelope.svg" alt="" />
-              <img src="./icons/notification .svg" alt="" />
-              <img src="./icons/user.svg" alt="" />
-            </div>
+        <div class="flex-between">
+          <div class="logo flex-center">
+            <img src="./images/logo.svg" alt="" />
+            <a href="#"><h1>REFORUMCMS</h1></a>
           </div>
-          <!-- Right 🚩 -->
-          <div class="right">
-            <div class="money">
-              <img src="./icons/money.svg" alt="" />
-              <span>2500</span>
-            </div>
-            <div class="user">
-              <span>username</span>
-              <img src="./img/avatar.svg" alt="" />
-              <img src="./icons/arrow-down.svg" alt="" />
-            </div>
+          <div class="navigation">
+            <ul class="flex-center" style="gap: 20px">
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Блоги</a></li>
+              <li><a href="#">Рейтинг</a></li>
+              <li><a href="#">Магазин </a></li>
+            </ul>
+          </div>
+          <div class="serach-bar flex-start-horizontal" style="gap: 8px">
+            <img src="./icons/search.svg" alt="" />
+            <input type="text" placeholder="Поиск..." />
+          </div>
+          <div class="logIn-btns flex-center" style="gap: 10px">
+            <a href="./html/login.html">
+              <button
+                style="background-color: var(--greenColor)"
+                class="btn btn-category-text"
+              >
+                Войти
+              </button></a
+            >
+
+            <button
+              style="background-color: var(--bgColor3)"
+              class="btn btn-category-text"
+            >
+              Создать аккаунт
+            </button>
           </div>
         </div>
       </div>
-      <div class="mode">
-        <img src="./icons/mode.svg" alt="" />
-      </div>
     </nav>
-    <!-- Main 🚩 -->
-    <section class="main">
-      <div class="container">
-        <div class="main-wrapper">
-          <!-- Sidebar 🚩 -->
-          <div class="sidebar">
-            <div class="sidebar-item">
-              <img src="./icons/sidebar1.svg" alt="" />
-              <span>Новости</span>
-            </div>
-            <div class="sidebar-item active">
-              <img src="./icons/sidebar2.svg" alt="" />
-              <span>Форум</span>
-            </div>
-            <div class="sidebar-item">
-              <img src="./icons/sidebar3.svg" alt="" />
-              <span>Мини-чат</span>
-            </div>
-            <div class="sidebar-item">
-              <img src="./icons/sidebar4.svg" alt="" />
-              <span>Пользователи</span>
-            </div>
-            <div class="horizontal-line"></div>
-            <div class="sidebar-item active">
-              <img src="./icons/sidebar5.svg" alt="" />
-              <span>Настройки</span>
-            </div>
-            <div class="sidebar-item">
-              <img src="./icons/sidebar6.svg" alt="" />
-              <span>Помощь</span>
+    <!-- Content 🚩 -->
+    <section class="content">
+      <div class="container flex-between-top" style="gap: 20px">
+        <!-- Sidebar Content 🚩 -->
+        <div class="sidebar flex-col" style="gap: 20px">
+          <!-- 1 🚩 -->
+          <div class="sidebar-wrapper">
+            <div class="user flex-between" style="gap: 25px">
+              <div class="user-logo">
+                <img src="./images/navAvatar.svg" alt="" />
+              </div>
+              <div
+                class="user-detail flex-col-start-vertical"
+                style="gap: 12px"
+              >
+                <div class="username flex-center" style="gap: 5px">
+                  <img src="./images/m.svg" alt="" />
+                  <span class="navUsername">shuname</span>
+                </div>
+                <div class="detail flex-center" style="gap: 22px">
+                  <div class="coins">
+                    <img src="./icons/coins.svg" alt="" />
+                    <span>265</span>
+                  </div>
+                  <div class="champion">
+                    <img src="./icons/champion.svg" alt="" />
+                    <span>3156</span>
+                  </div>
+                </div>
+              </div>
+              <img src="./icons/arrow-right.svg" alt="" />
             </div>
           </div>
-          <!-- Contents  🚩 -->
-          <div class="contents">
-            <!-- News Content 🚩 -->
-            <div class="news common">
-              <!-- Header 🚩 -->
-              <div class="header">
-                <div class="header-text">
-                  <img src="./icons/sidebar1.svg" alt="" />
-                  <h1>Новости</h1>
-                </div>
-                <div class="info">
-                  <div class="news-link">
-                    <span>Все новости </span>
-                    <img src="./icons/arrow-right.svg" alt="" />
-                  </div>
-                  <div class="date">
-                    <span>11 Янв 2021 в 15:33</span>
-                  </div>
-                </div>
+          <!-- 2 🚩 -->
+          <div class="sidebar-wrapper flex-col">
+            <div class="btns-wrapper btn flex-center">
+              <img src="./icons/create.svg" alt="" />
+              <button class="btn-category-text">Создать тему</button>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="categories flex-col" style="gap: 10px">
+              <!-- Category 🚩 -->
+              <div
+                class="category flex-start-horizontal category-active"
+                style="gap: 14px"
+              >
+                <img src="./icons/comment.svg" alt="" />
+                <span style="color: var(--greenColor)" class="mainText"
+                  >Все обсуждения</span
+                >
               </div>
-              <!-- News Texts 🚩 -->
-              <div class="news-texts">
-                <h1>Lorem ipsum dolor sit amet, adipiscing elit.</h1>
-                <p>
-                  Nam commodo mi velit, sit amet placerat justo elementum et.
-                  Fusce non porttitor arcu. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="./icons/topic.svg" alt="" />
+                <span class="mainText">Мои темы</span>
               </div>
-              <!-- Details 🚩 -->
-              <div class="details">
-                <div class="detail-wrapper">
-                  <img src="./icons/eye.svg" alt="" />
-                  <span>Читать полностью </span>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="./icons/post.svg" alt="" />
+                <span class="mainText">Мои пости</span>
+              </div>
+              <div class="horizontal-line"></div>
+              <!-- Ctg header 🚩 -->
+              <span class="btn-category-text" style="color: var(--textColor4)"
+                >Основная категория</span
+              >
+
+              <div class="category flex-between" style="gap: 14px">
+                <div class="ctg flex-center" style="gap: 15px">
+                  <img src="./icons/gift.svg" alt="" />
+                  <span class="mainText">Халява</span>
                 </div>
-                <div class="detail-wrapper">
-                  <img src="./icons/comment.svg" alt="" />
-                  <span>46 Комментарии</span>
+                <img
+                  class="hide arrow-down"
+                  src="./icons/arrow-donw.svg"
+                  alt=""
+                />
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="./icons/document-validation.svg" alt="" />
+                <span class="mainText">Работа и услуги</span>
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="./icons/user.svg" alt="" />
+                <span class="mainText">Арбитраж</span>
+              </div>
+              <!-- Ctg header 🚩 -->
+              <span class="btn-category-text" style="color: var(--textColor4)"
+                >Тематическая категория</span
+              >
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="./icons/help-circle.svg" alt="" />
+                <span class="mainText">Тематические вопросы</span>
+              </div>
+              <div class="category flex-between" style="gap: 14px">
+                <div class="ctg flex-center" style="gap: 15px">
+                  <img src="./icons/document-validation.svg" alt="" />
+                  <span class="mainText">Статьи</span>
                 </div>
+                <img
+                  class="hide arrow-down"
+                  src="./icons/arrow-donw.svg"
+                  alt=""
+                />
+              </div>
+              <div class="category flex-between" style="gap: 14px">
+                <div class="ctg flex-center" style="gap: 15px">
+                  <img src="./icons/user.svg" alt="" />
+                  <span class="mainText">Арбитраж</span>
+                </div>
+                <img
+                  class="hide arrow-down"
+                  src="./icons/arrow-donw.svg"
+                  alt=""
+                />
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="./icons/microsoft.svg" alt="" />
+                <span class="mainText">Софт</span>
               </div>
             </div>
-            <!-- Rating Content 🚩 -->
-            <div class="rating common">
-              <div class="rating-header">
-                <div class="header-text">
-                  <img src="./icons/champion.svg" alt="" />
-                  <h1>Рейтинг</h1>
-                </div>
-                <div class="rating-link">
-                  <span>Топ ползователи</span>
-                  <img src="./icons/arrow-right.svg" alt="" />
-                </div>
+          </div>
+          <!-- 3 🚩 -->
+          <div class="sidebar-wrapper flex-col" style="gap: 14px">
+            <div class="category flex-start-horizontal" style="gap: 14px">
+              <img src="./icons/pie-chart.svg" alt="" />
+              <span style="color: var(--textColor4)">Статистика форума</span>
+            </div>
+            <span class="mainText">Тем на форуме: 2523015</span>
+            <span class="mainText">Cообщений на форуме: 8214444</span>
+            <span class="mainText">Просмотров форума: 29455884</span>
+          </div>
+        </div>
+        <!-- Main Content 🚩 -->
+        <div class="main flex-col" style="gap: 20px">
+          <div class="entrance flex-col-start" style="gap: 10px">
+            <div class="entrance-text flex-center" style="gap: 5px">
+              <img src="./icons/news.svg" alt="" />
+              <h1 class="postHeader">What is Lorem Ipsum?</h1>
+            </div>
+            <div class="entrance-date flex-center" style="gap: 10px">
+              <h2 class="text">
+                Автор: <span class="navUsername">shuname</span>
+              </h2>
+              <h2 class="text">• Четверг в 15:31</h2>
+            </div>
+            <p class="text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="horizontal-line"></div>
+            <div class="icons flex-center" style="gap: 16px">
+              <div class="icon">
+                <img src="./icons/liked.svg" alt="" />
+                <span>3</span>
               </div>
-              <div class="rating-details">
-                <div class="places">
-                  <div class="place">
-                    <img src="./icons/firstPlace.svg" alt="" />
-                    <span>username</span>
-                  </div>
-                  <div class="place">
-                    <img src="./icons/secondPlace.svg" alt="" />
-                    <span>username</span>
-                  </div>
-                  <div class="place">
-                    <img src="./icons/thirdPlace.svg" alt="" />
-                    <span>username</span>
-                  </div>
-                </div>
-                <div class="status">
-                  <div class="rate">
-                    <span>523</span>
-                    <div class="sign">S+</div>
-                  </div>
-                  <div class="rate">
-                    <span>489</span>
-                    <div class="sign">S</div>
-                  </div>
-                  <div class="rate">
-                    <span>410</span>
-                    <div class="sign">S-</div>
-                  </div>
-                </div>
+              <div class="icon flex-center" style="gap: 5px">
+                <img src="./icons/postComment.svg" alt="" />
+                <span>3</span>
               </div>
             </div>
-            <!-- Responses Content 🚩 -->
-            <div class="responses common">
-              <div class="response-header">
-                <div class="header-text">
-                  <img src="./icons/sidebar2.svg" alt="" />
-                  <h1>Новые ответы</h1>
-                </div>
-                <div class="response-link">
-                  <span>Новые темы</span>
-                  <img src="./icons/arrow-right.svg" alt="" />
-                </div>
+          </div>
+          <!-- Filter 🚩 -->
+          <div class="main-wrapper">
+            <!-- Filter 🚩 -->
+            <div class="filter flex-start-horizontal" style="gap: 15px">
+              <img src="./icons/filter.svg" alt="" />
+              <span class="mainText">Фильтр:</span>
+              <select class="filter-select" name="" id="">
+                <option value="">По последнему ответу</option>
+              </select>
+              <div class="filter-icon flex-center">
+                <img src="./icons/navSetting.svg" alt="" />
               </div>
-              <div class="response-details">
-                <div class="response-messages">
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                  <div class="messages">
-                    <img src="./icons/news.svg" alt="" />
-                    <span>Спустя 15 лет отсутствия</span>
-                  </div>
-                </div>
-                <div class="user-detail">
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                  <div class="user-detail-wrapper">
-                    <img src="./icons/arrow-left-double.svg" alt="" />
-                    <div class="user">
-                      <img src="./img/userAvatar.svg" alt="" />
-                      <span>username</span>
-                    </div>
-                    <div class="msg">
-                      <img src="./icons/message.svg" alt="" />
-                      <span>523</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="filter-icon flex-center">
+                <img src="./icons/refresh.svg" alt="" />
               </div>
             </div>
-            <!-- Response Content 2 🚩 -->
-            <div class="response2 common">
-              <div class="response-header">
-                <div class="header-text">
-                  <img src="./icons/sidebar2.svg" alt="" />
-                  <h1>Новые ответы</h1>
+          </div>
+          <!-- Main wrapper 🚩 -->
+          <div class="main-wrapper flex-col" style="gap: 10px">
+            <div class="main-header flex-between-top">
+              <div class="header-info flex-center" style="gap: 12px">
+                <div class="info-left">
+                  <img src="./images/navAvatar.svg" alt="" />
                 </div>
-                <div class="response-link">
-                  <span>Новые темы</span>
-                  <img src="./icons/arrow-right.svg" alt="" />
+                <div class="info-right flex-col" style="gap: 10px">
+                  <h1 class="postHeader">Названи теми из разделов форума</h1>
+                  <h1 class="text">
+                    от: <span class="navUsername">shuname</span>
+                  </h1>
                 </div>
+              </div>
+              <img class="option-icon" src="./icons/options.svg " alt="" />
+            </div>
+            <p class="text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="horizontal-line"></div>
+            <div class="icons flex-start-horizontal" style="gap: 16px">
+              <div class="icon">
+                <img src="./icons/like.svg" alt="" />
+                <span>3</span>
+              </div>
+              <div class="icon">
+                <img src="./icons/postComment.svg" alt="" />
+                <span>3</span>
+              </div>
+            </div>
+            <div
+              class="hide option-modal flex-col-start-vertical"
+              style="gap: 10px; display: none"
+            >
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/lock.svg" alt="" />
+                <span class="postOptions">Закрыть</span>
+              </div>
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/pin.svg" alt="" />
+                <span class="postOptions">Закрепить</span>
+              </div>
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/delete.svg" alt="" />
+                <span class="postOptions">Удалить</span>
+              </div>
+            </div>
+          </div>
+          <div class="main-wrapper flex-col" style="gap: 10px">
+            <div class="main-header flex-between-top">
+              <div class="header-info flex-center" style="gap: 12px">
+                <div class="info-left">
+                  <img src="./images/navAvatar.svg" alt="" />
+                </div>
+                <div class="info-right flex-col" style="gap: 10px">
+                  <h1 class="postHeader">Названи теми из разделов форума</h1>
+                  <h1 class="text">
+                    от: <span class="navUsername">shuname</span>
+                  </h1>
+                </div>
+              </div>
+              <img class="option-icon" src="./icons/options.svg " alt="" />
+            </div>
+
+            <div class="horizontal-line"></div>
+            <div class="icons flex-start-horizontal" style="gap: 16px">
+              <div class="icon">
+                <img src="./icons/like.svg" alt="" />
+                <span>3</span>
+              </div>
+              <div class="icon">
+                <img src="./icons/postComment.svg" alt="" />
+                <span>3</span>
+              </div>
+            </div>
+            <div
+              class="option-modal hide flex-col-start-vertical"
+              style="gap: 10px; display: none"
+            >
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/lock.svg" alt="" />
+                <span class="postOptions">Закрыть</span>
+              </div>
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/pin.svg" alt="" />
+                <span class="postOptions">Закрепить</span>
+              </div>
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/delete.svg" alt="" />
+                <span class="postOptions">Удалить</span>
+              </div>
+            </div>
+          </div>
+          <div class="main-wrapper flex-col" style="gap: 10px">
+            <div class="main-header flex-between-top">
+              <div class="header-info flex-center" style="gap: 12px">
+                <div class="info-left">
+                  <img src="./images/navAvatar.svg" alt="" />
+                </div>
+                <div class="info-right flex-col" style="gap: 10px">
+                  <h1 class="postHeader">Названи теми из разделов форума</h1>
+                  <h1 class="text">
+                    от: <span class="navUsername">shuname</span>
+                  </h1>
+                </div>
+              </div>
+              <img class="option-icon" src="./icons/options.svg " alt="" />
+            </div>
+            <p class="text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="horizontal-line"></div>
+            <div class="icons flex-start-horizontal" style="gap: 16px">
+              <div class="icon">
+                <img src="./icons/like.svg" alt="" />
+                <span>3</span>
+              </div>
+              <div class="icon">
+                <img src="./icons/postComment.svg" alt="" />
+                <span>3</span>
+              </div>
+            </div>
+            <div
+              class="option-modal flex-col-start-vertical"
+              style="gap: 10px; display: none"
+            >
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/lock.svg" alt="" />
+                <span class="postOptions">Закрыть</span>
+              </div>
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/pin.svg" alt="" />
+                <span class="postOptions">Закрепить</span>
+              </div>
+              <div class="option flex-start-horizontal" style="gap: 13px">
+                <img src="./icons/delete.svg" alt="" />
+                <span class="postOptions">Удалить</span>
               </div>
             </div>
           </div>
