@@ -51,6 +51,11 @@ ul li {
   margin: 15px 0px;
 }
 
+.line {
+  width: 100%;
+  border: 1px solid rgb(36, 36, 36);
+}
+
 button {
   cursor: pointer;
   transition: all 0.3s ease;
@@ -105,6 +110,7 @@ button:hover {
 .text {
   font-size: 13px;
   font-weight: 400;
+  color: rgb(175, 175, 175);
 }
 
 /* BUTTON STYLES 🚩 */
@@ -143,6 +149,18 @@ button:hover {
   justify-content: space-between;
 }
 
+.flex-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+
+.flex-start {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -176,6 +194,10 @@ nav {
   padding: 10px 0px;
 }
 
+.nav-wrapper {
+  gap: 10px;
+}
+
 .logo h1 {
   font-size: 16px;
   font-weight: 700;
@@ -191,6 +213,10 @@ nav .serach-bar input {
   border: none;
   outline: none;
   color: #fff;
+}
+
+.serach-bar input {
+  width: 50%;
 }
 
 /* ======= Content 🚩 ====== */
@@ -309,7 +335,7 @@ nav .serach-bar input {
   cursor: pointer;
 }
 
-/* ==== LOGIN 🚩 ==== */
+/* ==== LOGIN HTML 🚩 ==== */
 
 .login {
   height: 100vh;
@@ -381,4 +407,86 @@ form {
 
 .back-to-main a {
   color: var(--textColor5);
+}
+
+/* ==== TOPIC HTML 🚩 ==== */
+
+.nav-icon {
+  padding: 14px;
+}
+
+.nav-icon:hover {
+  background-color: var(--bgColor3);
+}
+
+.topic {
+  margin: 20px 0px;
+}
+
+.topic-content {
+  border-radius: 5px;
+  background-color: var(--bgColor1);
+  border: 1px solid rgb(36, 36, 36);
+}
+
+.topic-padding {
+  padding: 20px 15px;
+}
+
+.topic-post .admin {
+  padding: 4px 18px;
+  border-radius: 5px;
+  background-color: rgb(254, 48, 48);
+}
+
+.action-icon {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--bgColor3);
+  cursor: pointer;
+}
+
+.post-comment img {
+  width: 60px;
+  height: 60px;
+}
+
+.topic-post {
+  position: relative;
+}
+
+.topic-option-icon {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.leave-comment,
+.write-comment,
+.send-message {
+  width: 100%;
+}
+
+.message-bar {
+  padding: 14px 22px;
+  border-radius: 5px;
+  background-color: var(--bgColor3);
+  width: 100%;
+}
+
+.message-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.send-icon {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--greenColor);
+  cursor: pointer;
 }
