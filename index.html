@@ -57,7 +57,7 @@
           <div class="sidebar-wrapper">
             <div class="user flex-between" style="gap: 25px">
               <div class="user-logo">
-                <img src="./images/navAvatar.svg" alt="" />
+                <img src="./images/commentAvatar.png" alt="" />
               </div>
               <div
                 class="user-detail flex-col-start-vertical"
@@ -113,16 +113,26 @@
                 >Основная категория</span
               >
 
-              <div class="category flex-between" style="gap: 14px">
-                <div class="ctg flex-center" style="gap: 15px">
-                  <img src="./icons/gift.svg" alt="" />
-                  <span class="mainText">Халява</span>
+              <div class="category flex-col" style="gap: 14px">
+                <div class="ctg flex-between" style="gap: 14px">
+                  <div class="flex-center" style="gap: 15px">
+                    <img src="./icons/gift.svg" alt="" />
+                    <span class="mainText">Халява</span>
+                  </div>
+                  <img
+                    class="hide ctg-closeIcon arrow-down"
+                    src="./icons/arrow-donw.svg"
+                    alt=""
+                  />
                 </div>
-                <img
-                  class="hide arrow-down"
-                  src="./icons/arrow-donw.svg"
-                  alt=""
-                />
+                <!-- Ctg sections 🚩 -->
+                <div class="hide ctg-sections flex-col" style="gap: 10px">
+                  <ul class="flex-col" style="gap: 10px">
+                    <li><a class="text" href="#">Розыгрыши</a></li>
+                    <li><a class="text" href="#">Бесплатная накрутка</a></li>
+                    <li><a class="text" href="#">Промокоды</a></li>
+                  </ul>
+                </div>
               </div>
               <div class="category flex-start-horizontal" style="gap: 14px">
                 <img src="./icons/document-validation.svg" alt="" />
@@ -140,16 +150,31 @@
                 <img src="./icons/help-circle.svg" alt="" />
                 <span class="mainText">Тематические вопросы</span>
               </div>
-              <div class="category flex-between" style="gap: 14px">
-                <div class="ctg flex-center" style="gap: 15px">
-                  <img src="./icons/document-validation.svg" alt="" />
-                  <span class="mainText">Статьи</span>
+              <div class="category flex-col" style="gap: 10px">
+                <div class="ctg flex-between" style="gap: 14px">
+                  <div class="flex-center" style="gap: 15px">
+                    <img src="./icons/document-validation.svg" alt="" />
+                    <span class="mainText">Статьи</span>
+                  </div>
+                  <img
+                    class="hide ctg-closeIcon arrow-down"
+                    src="./icons/arrow-donw.svg"
+                    alt=""
+                  />
                 </div>
-                <img
-                  class="hide arrow-down"
-                  src="./icons/arrow-donw.svg"
-                  alt=""
-                />
+                <!-- Ctg sections 🚩 -->
+                <div class="hide ctg-sections flex-col" style="gap: 10px">
+                  <ul class="flex-col" style="gap: 10px">
+                    <li><a class="text" href="#">Способы заработка</a></li>
+                    <li><a class="text" href="#">SMM</a></li>
+                    <li><a class="text" href="#">Безопасность</a></li>
+                    <li><a class="text" href="#">Социальные сети</a></li>
+                    <li>
+                      <a class="text" href="#">Авторские курсы заработка</a>
+                    </li>
+                    <li><a class="text" href="#">Криптовалюты</a></li>
+                  </ul>
+                </div>
               </div>
               <div class="category flex-between" style="gap: 14px">
                 <div class="ctg flex-center" style="gap: 15px">
@@ -260,6 +285,7 @@
                 <span>3</span>
               </div>
             </div>
+            <!-- Modal 🚩 -->
             <div
               class="hide option-modal flex-col-start-vertical"
               style="gap: 10px; display: none"
@@ -376,5 +402,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
