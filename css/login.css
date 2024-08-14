@@ -1,0 +1,73 @@
+/* ==== LOGIN HTML 🚩 ==== */
+
+.login {
+  height: 100vh;
+}
+
+.login-wrapper {
+  position: relative;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--bgColor1);
+  padding-bottom: 60px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.login-header {
+  margin-bottom: 29px;
+}
+
+.input-wrapper {
+  padding: 12px;
+  border-radius: 5px;
+  background-color: var(--bgColor3);
+  width: 100%;
+}
+
+.input-wrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.memorize-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  border: 1px solid var(--textColor1);
+  width: 16px;
+  height: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.memorize-checkbox:checked {
+  background-color: var(--greenColor);
+}
+
+.chek-out {
+  width: 100%;
+}
+
+.otherwise {
+  width: 100%;
+}
+
+.back-to-main {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.back-to-main a {
+  color: var(--textColor5);
+}

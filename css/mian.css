@@ -1,8 +1,26 @@
 /* ==== FONT SET UP 🚩 ==== */
 
 @font-face {
+  font-family: "vk Regular";
+  src: url("../fonts/vkRegular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
   font-family: "vk Medium";
   src: url("../fonts/vkMedium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "vk Demibold";
+  src: url("../fonts/vkDemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "vk Bold";
+  src: url("../fonts/vkBold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 /* ==== MAIN CSS 🚩 ==== */
@@ -12,11 +30,13 @@
   --bgColor2: #121212;
   --bgColor3: rgb(39, 39, 39);
   --bgColor4: rgb(62, 62, 62);
+  --bgColor5: rgb(48, 48, 48);
   --textColor1: rgb(220, 220, 220);
   --textColor2: rgb(254, 48, 48);
   --textColor3: rgb(255, 255, 255);
   --textColor4: rgb(114, 114, 114);
   --textColor5: rgb(189, 189, 189);
+  --textColor6: rgb(175, 175, 175);
   --greenColor: rgb(22, 156, 79);
 }
 
@@ -33,7 +53,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 870px;
   margin: 0 auto;
 }
 
@@ -51,18 +71,13 @@ ul li {
   margin: 15px 0px;
 }
 
+select {
+  cursor: pointer;
+}
+
 .line {
   width: 100%;
   border: 1px solid rgb(36, 36, 36);
-}
-
-button {
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  opacity: 0.9;
 }
 
 .hide {
@@ -73,54 +88,146 @@ button:hover {
   display: block !important;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* TEXT STYLES 🚩 */
 
-.mainText {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.btn-category-text {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.navUsername {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--textColor2);
-}
-
-.postUsername {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--textColor2);
-}
-
-.postOptions {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.postHeader {
-  font-size: 15px;
+.logo-text {
+  font-family: "vk Bold";
   font-weight: 700;
+  font-size: 16px;
 }
 
-.text {
-  font-size: 13px;
+.px10-fw700 {
+  font-family: "vk Bold";
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.px13-fw400 {
+  font-family: "vk Regular";
   font-weight: 400;
-  color: rgb(175, 175, 175);
+  font-size: 13px;
+}
+
+.px13-fw500 {
+  font-family: "vk Medium";
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.px13-fw600 {
+  font-family: "vk DemiBold";
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.px14-fw500 {
+  font-family: "vk Medium";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.px14-fw600 {
+  font-family: "vk Demibold";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.px14-fw400 {
+  font-family: "vk Regular";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.px15-fw400 {
+  font-family: "vk Regular";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.px15-fw500 {
+  font-family: "vk Medium";
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.px15-fw600 {
+  font-family: "vk Demibold";
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.px15-fw700 {
+  font-family: "vk Bold";
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.px16-fw600 {
+  font-family: "vk DemiBold";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.px16-fw500 {
+  font-family: "vk Medium";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.px16-fw400 {
+  font-family: "vk Regular";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Text Colors 🚩 */
+
+.rgb220 {
+  color: var(--textColor1);
+}
+
+.rgb175 {
+  color: var(--textColor6);
+}
+
+.rgb114 {
+  color: var(--textColor4);
+}
+
+.rgb255 {
+  color: var(--textColor3);
+}
+
+.rgb189 {
+  color: var(--textColor5);
+}
+
+.greenColor {
+  color: var(--greenColor);
+}
+
+.red {
+  color: var(--textColor2);
 }
 
 /* BUTTON STYLES 🚩 */
 
 .btn {
+  cursor: pointer;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   color: var(--textColor3);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 /* DISPLAY STYLES 🚩 */
@@ -191,134 +298,32 @@ button:hover {
 nav {
   width: 100%;
   background-color: var(--bgColor1);
-  padding: 10px 0px;
 }
 
-.nav-wrapper {
-  gap: 10px;
+.navigation-wrapper {
+  padding: 15px 10px;
 }
 
-.logo h1 {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--textColor1);
+.navigation-wrapper:hover {
+  background-color: var(--bgColor3);
 }
 
-nav .navigation a {
-  color: var(--textColor1);
+.navigation-active {
+  background-color: var(--bgColor3);
 }
 
-nav .serach-bar input {
+nav .search-bar input {
   background: transparent;
   border: none;
   outline: none;
   color: #fff;
-}
-
-.serach-bar input {
-  width: 50%;
-}
-
-/* ======= Content 🚩 ====== */
-
-.content {
-  margin: 20px 0px;
-}
-
-/* Sidebar 🚩 */
-
-.sidebar {
-  width: 28%;
-}
-
-.sidebar-wrapper {
-  padding: 15px 10px;
-  border-radius: 5px;
-  background-color: var(--bgColor1);
-}
-
-/* 2 🚩 */
-
-.btns-wrapper {
-  background-color: var(--greenColor);
-  gap: 5px;
-}
-
-.btns-wrapper button {
-  background: transparent;
-  border: none;
-  color: var(--textColor3);
-}
-
-.category {
-  width: 100%;
-  padding: 8px 6px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.category:hover {
-  background-color: var(--bgColor3);
-}
-
-.category:hover .arrow-down {
-  display: block !important;
-  background-color: var(--bgColor3);
-}
-
-.category-active {
-  background-color: var(--bgColor3);
-}
-
-.ctg-sections {
-  margin-left: 50px;
-}
-
-.ctg-sections span {
-  cursor: pointer;
-}
-
-.ctg-sections ul li a:hover {
-  color: #fff;
-}
-
-/* Main 🚩 */
-
-.main {
-  width: 70%;
-}
-
-.entrance {
-  padding: 17px;
+  width: 50px;
 }
 
 .icon {
   padding: 7px 11px;
   border-radius: 15px;
   background: rgb(62, 62, 62);
-}
-
-.main-wrapper {
-  position: relative;
-  padding: 15px;
-  background-color: var(--bgColor1);
-  border-radius: 5px;
-}
-
-/* Filter 🚩 */
-
-.filter-icon {
-  padding: 8px 10px;
-  border-radius: 5px;
-  background-color: var(--bgColor3);
-}
-
-.filter-select {
-  padding: 9px 12px;
-  background-color: var(--bgColor3);
-  border: none;
-  border-radius: 5px;
-  color: var(--textColor1);
 }
 
 /* Option Modal 🚩 */
@@ -350,158 +355,10 @@ nav .serach-bar input {
   height: 20px;
 }
 
-/* ==== LOGIN HTML 🚩 ==== */
-
-.login {
-  height: 100vh;
+.sidebar-active {
+  color: var(--greenColor);
 }
 
-.login-wrapper {
-  position: relative;
-  width: 600px;
-  height: auto;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: var(--bgColor1);
-  padding-bottom: 60px;
-}
-
-form {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.login-header {
-  margin-bottom: 29px;
-}
-
-.input-wrapper {
-  padding: 12px;
-  border-radius: 5px;
+.sidebar-ctg-active {
   background-color: var(--bgColor3);
-  width: 100%;
-}
-
-.input-wrapper input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-}
-
-.memorize-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 5px;
-  border: 1px solid var(--textColor1);
-  width: 16px;
-  height: 16px;
-  outline: none;
-  cursor: pointer;
-}
-
-.memorize-checkbox:checked {
-  background-color: var(--greenColor);
-}
-
-.chek-out {
-  width: 100%;
-}
-
-.otherwise {
-  width: 100%;
-}
-
-.back-to-main {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-}
-
-.back-to-main a {
-  color: var(--textColor5);
-}
-
-/* ==== TOPIC HTML 🚩 ==== */
-
-.nav-icon {
-  padding: 14px;
-}
-
-.nav-icon:hover {
-  background-color: var(--bgColor3);
-}
-
-.topic {
-  margin: 20px 0px;
-}
-
-.topic-content {
-  border-radius: 5px;
-  background-color: var(--bgColor1);
-  border: 1px solid rgb(36, 36, 36);
-}
-
-.topic-padding {
-  padding: 20px 15px;
-}
-
-.topic-post .admin {
-  padding: 4px 18px;
-  border-radius: 5px;
-  background-color: rgb(254, 48, 48);
-}
-
-.action-icon {
-  padding: 7px;
-  border-radius: 5px;
-  background-color: var(--bgColor3);
-  cursor: pointer;
-}
-
-.post-comment img {
-  width: 60px;
-  height: 60px;
-}
-
-.topic-post {
-  position: relative;
-}
-
-.topic-option-icon {
-  position: absolute;
-  top: 16px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.leave-comment,
-.write-comment,
-.send-message {
-  width: 100%;
-}
-
-.message-bar {
-  padding: 14px 22px;
-  border-radius: 5px;
-  background-color: var(--bgColor3);
-  width: 100%;
-}
-
-.message-bar input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 13px;
-}
-
-.send-icon {
-  padding: 15px;
-  border-radius: 5px;
-  background-color: var(--greenColor);
-  cursor: pointer;
 }

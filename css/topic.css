@@ -1,0 +1,82 @@
+/* ==== TOPIC HTML 🚩 ==== */
+
+.nav-icon {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  background-color: var(--bgColor3);
+}
+
+.topic {
+  margin: 20px 0px;
+}
+
+.topic-content {
+  border-radius: 5px;
+  background-color: var(--bgColor1);
+  border: 1px solid rgb(36, 36, 36);
+}
+
+.topic-padding {
+  padding: 20px 15px;
+}
+
+.topic-post .admin {
+  padding: 4px 18px;
+  border-radius: 5px;
+  background-color: rgb(254, 48, 48);
+}
+
+.action-icon {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--bgColor3);
+  cursor: pointer;
+}
+
+.post-comment img {
+  width: 60px;
+  height: 60px;
+}
+
+.topic-post {
+  position: relative;
+}
+
+.topic-option-icon {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.leave-comment,
+.write-comment,
+.send-message {
+  width: 100%;
+}
+
+.message-bar {
+  padding: 14px 22px;
+  border-radius: 5px;
+  background-color: var(--bgColor3);
+  width: 100%;
+}
+
+.message-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.send-icon {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--greenColor);
+  cursor: pointer;
+}

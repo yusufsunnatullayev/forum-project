@@ -5,35 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="../images/logo.svg" />
     <link rel="stylesheet" href="../css/mian.css" />
+    <link rel="stylesheet" href="../css/topic.css" />
     <title>Forum</title>
   </head>
   <body>
     <!-- Navbar 🚩 -->
     <nav>
       <div class="container">
-        <div class="flex-between nav-wrapper">
+        <div class="flex-between nav-wrapper" style="gap: 15px">
           <div class="logo flex-center">
             <img src="../images/logo.svg" alt="" />
-            <a href="../index.html"><h1>REFORUMCMS</h1></a>
+            <a href="../index.html"
+              ><h1 class="logo-text rgb220">REFORUMCMS</h1></a
+            >
           </div>
           <div class="navigation">
-            <ul class="flex-center" style="gap: 20px">
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Блоги</a></li>
-              <li><a href="#">Рейтинг</a></li>
-              <li><a href="#">Магазин </a></li>
+            <ul class="flex-center">
+              <div class="navigation-wrapper">
+                <li>
+                  <a class="px14-fw500 rgb220" href="./html/topic.html"
+                    >Новости</a
+                  >
+                </li>
+              </div>
+              <div class="navigation-wrapper">
+                <li><a class="px14-fw500 rgb220" href="#">Блоги</a></li>
+              </div>
+              <div class="navigation-wrapper">
+                <li><a class="px14-fw500 rgb220" href="#">Рейтинг</a></li>
+              </div>
+              <div class="navigation-wrapper flex-center" style="gap: 5px">
+                <img src="../icons/coins.svg" alt="" />
+                <li><a class="px14-fw500 rgb220" href="#">Магазин </a></li>
+              </div>
             </ul>
           </div>
-          <div class="serach-bar flex-start-horizontal" style="gap: 8px">
+          <div class="search-bar flex-start-horizontal" style="gap: 5px">
             <img src="../icons/search.svg" alt="" />
-            <input type="text" placeholder="Поиск..." />
+            <input type="px14-fw500 rgb220" placeholder="Поиск..." />
           </div>
-          <div class="nav-icons flex-center" style="gap: 7px">
+          <div class="nav-icons flex-center">
             <div class="nav-icon">
               <img src="../icons/navMessage.svg" alt="" />
             </div>
             <div class="nav-icon">
-              <img src="../icons/navNotification.svg" alt="" />
+              <a href="./notification.html"
+                ><img src="../icons/navNotification.svg" alt=""
+              /></a>
             </div>
             <div class="nav-icon">
               <img src="../icons/navUser.svg" alt="" />
@@ -43,13 +61,14 @@
             </div>
           </div>
           <div class="nav-user flex-center" style="gap: 7px">
-            <span class="navUsername">shuname</span>
+            <span class="px14-fw600 red">shuname</span>
             <img src="../images/navAvatar.svg" alt="" />
             <img src="../icons/arrow-donw.svg" alt="" />
           </div>
         </div>
       </div>
     </nav>
+    <!-- Topic 🚩 -->
     <section class="topic flex-col">
       <div class="container">
         <!-- Topic Content 🚩 -->
@@ -57,13 +76,11 @@
           <!-- Link 🚩 -->
           <div class="topic-link topic-padding flex-center" style="gap: 12px">
             <img src="../icons/link.svg" alt="" />
-            <span class="postHeader">
+            <span class="px15-fw700 rgb189">
               Основная категория /
               <span>Халява /</span>
               <span>Раздачи аккаунтов, ключей /</span>
-              <span style="color: var(--greenColor)">
-                Названи теми из разделов форума</span
-              >
+              <span class="greenColor"> Названи теми из разделов форума</span>
             </span>
           </div>
           <div class="line"></div>
@@ -76,7 +93,7 @@
               <div class="author-avatar flex-col">
                 <img src="../images/commentAvatar.png" alt="" />
                 <div class="admin">
-                  <span class="btn-category-text">ADMIN</span>
+                  <span class="px10-fw700 rgb220">ADMIN</span>
                 </div>
               </div>
               <div
@@ -84,24 +101,22 @@
                 style="gap: 11px"
               >
                 <div class="author-info flex-center" style="gap: 10px">
-                  <h1 class="text">Автор:</h1>
+                  <h1 class="px13-fw400 rgb175">Автор:</h1>
                   <div class="author-username flex-center" style="gap: 3px">
                     <img src="../images/m.svg" alt="" />
-                    <span class="navUsername">shuname</span>
+                    <span class="px16-fw600 red">shuname</span>
                   </div>
-                  <span class="text">Четверг в 15:31</span>
+                  <span class="px13-fw400 rgb175">Четверг в 15:31</span>
                 </div>
                 <div class="author-text">
-                  <h1 class="postHeader" style="color: var(--greenColor)">
+                  <h1 class="px15-fw700 greenColor">
                     Названи теми из разделов форума
                   </h1>
-                  <p>
+                  <p class="px15-fw400 rgb220">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy
-                    <span style="color: var(--greenColor)"
-                      >text ever since the 1500s,</span
-                    >
+                    <span class="greenColor">text ever since the 1500s,</span>
                     when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book.
                   </p>
@@ -111,17 +126,17 @@
             <div class="line"></div>
             <div class="post-action topic-padding flex-between">
               <div class="icons flex-center" style="gap: 17px">
-                <div class="icon">
-                  <img src="../icons/like.svg" alt="" />
-                  <span>3</span>
+                <div class="icon flex-center" style="gap: 5px">
+                  <img class="pointer" src="../icons/like.svg" alt="" />
+                  <span class="px14-fw400 rgb255">3</span>
                 </div>
-                <div class="icon">
-                  <img src="../icons/postComment.svg" alt="" />
-                  <span>3</span>
+                <div class="icon flex-center" style="gap: 5px">
+                  <img class="pointer" src="../icons/postComment.svg" alt="" />
+                  <span class="px14-fw400 rgb255">3</span>
                 </div>
               </div>
               <div class="actions flex-center" style="gap: 16px">
-                <span class="text">Действие для админов</span>
+                <span class="px15-fw400 rgb175">Действие для админов</span>
                 <div class="action-icon">
                   <img src="../icons/edit.svg" alt="" />
                 </div>
@@ -142,7 +157,9 @@
               style="gap: 10px"
             >
               <img src="../icons/sad.svg" alt="" />
-              <span class="text">В этом теме еще нет сообщений</span>
+              <span class="px16-fw400 rgb175"
+                >В этом теме еще нет сообщений</span
+              >
             </div>
             <div class="line"></div>
             <!-- 🚩 -->
@@ -160,21 +177,16 @@
                 <div class="author-info flex-center" style="gap: 10px">
                   <div class="author-username flex-center" style="gap: 3px">
                     <img src="../images/m.svg" alt="" />
-                    <span class="navUsername">shuname</span>
+                    <span class="px16-fw600 red">shuname</span>
                   </div>
-                  <span class="text">Четверг в 15:31</span>
+                  <span class="px13-fw400 rgb175">Четверг в 15:31</span>
                 </div>
                 <div class="author-text">
-                  <h1 class="postHeader" style="color: var(--greenColor)">
-                    Названи теми из разделов форума
-                  </h1>
-                  <p>
+                  <p class="px15-fw400 rgb220">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy
-                    <span style="color: var(--greenColor)"
-                      >text ever since the 1500s,</span
-                    >
+                    <span class="greenColor">text ever since the 1500s,</span>
                     when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book.
                   </p>
@@ -192,11 +204,11 @@
               >
                 <div class="option flex-start-horizontal" style="gap: 13px">
                   <img src="../icons/edit.svg" alt="" />
-                  <span class="postOptions">Изменить</span>
+                  <span class="px13-fw500 rgb220">Изменить</span>
                 </div>
                 <div class="option flex-start-horizontal" style="gap: 13px">
                   <img src="../icons/white-delete.svg" alt="" />
-                  <span class="postOptions">Удалить</span>
+                  <span class="px13-fw500 rgb220">Удалить</span>
                 </div>
               </div>
             </div>
@@ -216,37 +228,36 @@
                 <div class="author-info flex-center" style="gap: 10px">
                   <div class="author-username flex-center" style="gap: 3px">
                     <img src="../images/m.svg" alt="" />
-                    <span class="navUsername">shuname</span>
+                    <span class="px16-fw600 red">shuname</span>
                   </div>
-                  <span class="text">Четверг в 15:31</span>
+                  <span class="px13-fw400 rgb175">Четверг в 15:31</span>
                 </div>
                 <div class="author-text">
-                  <h1 class="postHeader" style="color: var(--greenColor)">
-                    Названи теми из разделов форума
-                  </h1>
-                  <p>
+                  <p class="px15-fw400 rgb220">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy
-                    <span style="color: var(--greenColor)"
-                      >text ever since the 1500s,</span
-                    >
+                    <span class="greenColor">text ever since the 1500s,</span>
                     when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book.
                   </p>
                 </div>
                 <div class="comment-action flex-center" style="gap: 20px">
                   <div class="icon">
-                    <img src="../icons/like.svg" alt="" />
-                    <span>3</span>
+                    <img class="pointer" src="../icons/like.svg" alt="" />
+                    <span class="px14-fw400 rgb255">3</span>
                   </div>
                   <div class="response flex-center" style="gap: 7px">
-                    <img src="../icons/response.svg" alt="" />
-                    <span class="text">Ответить</span>
+                    <img class="pointer" src="../icons/response.svg" alt="" />
+                    <span class="px14-fw400 rgb220">Ответить</span>
                   </div>
                   <div class="quote flex-center" style="gap: 7px">
-                    <img src="../icons/quote-down-square.svg" alt="" />
-                    <span>Цитата</span>
+                    <img
+                      class="pointer"
+                      src="../icons/quote-down-square.svg"
+                      alt=""
+                    />
+                    <span class="px14-fw400 rgb220">Цитата</span>
                   </div>
                 </div>
               </div>
@@ -262,11 +273,11 @@
               >
                 <div class="option flex-start-horizontal" style="gap: 13px">
                   <img src="../icons/edit.svg" alt="" />
-                  <span class="postOptions">Изменить</span>
+                  <span class="px13-fw500 rgb220">Изменить</span>
                 </div>
                 <div class="option flex-start-horizontal" style="gap: 13px">
                   <img src="../icons/white-delete.svg" alt="" />
-                  <span class="postOptions">Удалить</span>
+                  <span class="px13-fw500 rgb220">Удалить</span>
                 </div>
               </div>
             </div>
@@ -286,37 +297,36 @@
                 <div class="author-info flex-center" style="gap: 10px">
                   <div class="author-username flex-center" style="gap: 3px">
                     <img src="../images/m.svg" alt="" />
-                    <span class="navUsername">shuname</span>
+                    <span class="px16-fw600 red">shuname</span>
                   </div>
-                  <span class="text">Четверг в 15:31</span>
+                  <span class="px13-fw400 rgb175">Четверг в 15:31</span>
                 </div>
                 <div class="author-text">
-                  <h1 class="postHeader" style="color: var(--greenColor)">
-                    Названи теми из разделов форума
-                  </h1>
-                  <p>
+                  <p class="px15-fw400 rgb220">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy
-                    <span style="color: var(--greenColor)"
-                      >text ever since the 1500s,</span
-                    >
+                    <span class="greenColor">text ever since the 1500s,</span>
                     when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book.
                   </p>
                 </div>
                 <div class="comment-action flex-center" style="gap: 20px">
                   <div class="icon">
-                    <img src="../icons/like.svg" alt="" />
-                    <span>3</span>
+                    <img class="pointer" src="../icons/like.svg" alt="" />
+                    <span class="px14-fw400 rgb255">3</span>
                   </div>
                   <div class="response flex-center" style="gap: 7px">
-                    <img src="../icons/response.svg" alt="" />
-                    <span class="text">Ответить</span>
+                    <img class="pointer" src="../icons/response.svg" alt="" />
+                    <span class="px14-fw400 rgb220">Ответить</span>
                   </div>
                   <div class="quote flex-center" style="gap: 7px">
-                    <img src="../icons/quote-down-square.svg" alt="" />
-                    <span>Цитата</span>
+                    <img
+                      class="pointer"
+                      src="../icons/quote-down-square.svg"
+                      alt=""
+                    />
+                    <span class="px14-fw400 rgb220">Цитата</span>
                   </div>
                 </div>
               </div>
@@ -332,11 +342,11 @@
               >
                 <div class="option flex-start-horizontal" style="gap: 13px">
                   <img src="../icons/edit.svg" alt="" />
-                  <span class="postOptions">Изменить</span>
+                  <span class="px13-fw500 rgb220">Изменить</span>
                 </div>
                 <div class="option flex-start-horizontal" style="gap: 13px">
                   <img src="../icons/white-delete.svg" alt="" />
-                  <span class="postOptions">Удалить</span>
+                  <span class="px13-fw500 rgb220">Удалить</span>
                 </div>
               </div>
             </div>
@@ -369,9 +379,13 @@
                   style="gap: 15px"
                 >
                   <img src="../icons/msgBar-icon.svg" alt="" />
-                  <input type="text" placeholder="Напишите ответ..." />
+                  <input
+                    class="px13-fw400 rgb189"
+                    type="text"
+                    placeholder="Напишите ответ..."
+                  />
                 </div>
-                <div class="send-icon flex-center">
+                <div class="btn send-icon flex-center">
                   <img src="../icons/sendMsg.svg" alt="" />
                 </div>
               </div>

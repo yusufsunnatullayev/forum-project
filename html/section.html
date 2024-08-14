@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="./images/logo.svg" />
+    <link rel="stylesheet" href="../css/mian.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/topic.css" />
+    <link rel="stylesheet" href="../css/section.css" />
+    <title>Forum</title>
+  </head>
+  <body>
+    <!-- Navbar 🚩 -->
+    <nav>
+      <div class="container">
+        <div class="flex-between nav-wrapper" style="gap: 15px">
+          <div class="logo flex-center">
+            <img src="../images/logo.svg" alt="" />
+            <a href="../index.html"
+              ><h1 class="logo-text rgb220">REFORUMCMS</h1></a
+            >
+          </div>
+          <div class="navigation">
+            <ul class="flex-center">
+              <div class="navigation-wrapper">
+                <li>
+                  <a class="px14-fw500 rgb220" href="./html/topic.html"
+                    >Новости</a
+                  >
+                </li>
+              </div>
+              <div class="navigation-wrapper">
+                <li><a class="px14-fw500 rgb220" href="#">Блоги</a></li>
+              </div>
+              <div class="navigation-wrapper">
+                <li><a class="px14-fw500 rgb220" href="#">Рейтинг</a></li>
+              </div>
+              <div class="navigation-wrapper flex-center" style="gap: 5px">
+                <img src="../icons/coins.svg" alt="" />
+                <li><a class="px14-fw500 rgb220" href="#">Магазин </a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="search-bar flex-start-horizontal" style="gap: 5px">
+            <img src="../icons/search.svg" alt="" />
+            <input type="px14-fw500 rgb220" placeholder="Поиск..." />
+          </div>
+          <div class="nav-icons flex-center">
+            <div class="nav-icon">
+              <img src="../icons/navMessage.svg" alt="" />
+            </div>
+            <div class="nav-icon">
+              <a href="./notification.html"
+                ><img src="../icons/navNotification.svg" alt=""
+              /></a>
+            </div>
+            <div class="nav-icon">
+              <img src="../icons/navUser.svg" alt="" />
+            </div>
+            <div class="nav-icon">
+              <img src="../icons/navSetting.svg" alt="" />
+            </div>
+          </div>
+          <div class="nav-user flex-center" style="gap: 7px">
+            <span class="px14-fw600 red">shuname</span>
+            <img src="../images/navAvatar.svg" alt="" />
+            <img src="../icons/arrow-donw.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Content 🚩 -->
+    <section class="content">
+      <div class="container flex-between-top" style="gap: 20px">
+        <!-- Sidebar Content 🚩 -->
+        <div class="sidebar flex-col" style="gap: 20px">
+          <!-- 1 🚩 -->
+          <div class="sidebar-wrapper">
+            <div class="user flex-between" style="gap: 12px">
+              <div class="user-logo">
+                <img src="../images/commentAvatar.png" alt="" />
+              </div>
+              <div
+                class="user-detail flex-col-start-vertical"
+                style="gap: 12px"
+              >
+                <div class="username flex-center" style="gap: 5px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px15-fw600 red">shuname</span>
+                </div>
+                <div class="detail flex-center" style="gap: 20px">
+                  <div class="coins flex-center" style="gap: 5px">
+                    <img src="../icons/coins.svg" alt="" />
+                    <span class="px13-fw600 rgb220">265</span>
+                  </div>
+                  <div class="champion flex-center" style="gap: 5px">
+                    <img src="../icons/champion.svg" alt="" />
+                    <span class="px13-fw600 rgb220">3156</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../icons/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <!-- 2 🚩 -->
+          <div class="sidebar-wrapper flex-col">
+            <div class="btns-wrapper btn flex-center">
+              <img src="../icons/create.svg" alt="" />
+              <button style="cursor: pointer" class="px14-fw600 rgb255">
+                Создать тему
+              </button>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="categories flex-col" style="gap: 10px">
+              <!-- Category 🚩 -->
+              <div
+                class="category flex-start-horizontal category-active"
+                style="gap: 14px"
+              >
+                <img src="../icons/comment.svg" alt="" />
+                <span class="fs14-fw500 greenColor">Все обсуждения</span>
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="../icons/topic.svg" alt="" />
+                <span class="px14-fw500 rgb220">Мои темы</span>
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="../icons/post.svg" alt="" />
+                <span class="px14-fw500 rgb220">Мои пости</span>
+              </div>
+              <div class="horizontal-line"></div>
+              <!-- Ctg header 🚩 -->
+              <span class="px14-fw600 rgb114">Основная категория</span>
+
+              <div
+                class="category sidebar-ctg-active flex-col"
+                style="gap: 14px"
+              >
+                <div class="ctg flex-between" style="gap: 14px">
+                  <div class="flex-center" style="gap: 15px">
+                    <img src="../icons/gift.svg" alt="" />
+                    <span class="px14-fw500 rgb220 sidebar-active">Халява</span>
+                  </div>
+                  <img
+                    class="hide ctg-closeIcon arrow-down"
+                    src="../icons/arrow-donw.svg"
+                    alt=""
+                  />
+                </div>
+                <!-- Ctg sections 🚩 -->
+                <div class="ctg-sections flex-col" style="gap: 10px">
+                  <ul class="flex-col" style="gap: 10px">
+                    <li>
+                      <a class="px13-fw500 rgb220 sidebar-active" href="#"
+                        >Розыгрыши</a
+                      >
+                    </li>
+                    <li>
+                      <a class="px13-fw500 rgb220" href="#"
+                        >Бесплатная накрутка</a
+                      >
+                    </li>
+                    <li><a class="px13-fw500 rgb220" href="#">Промокоды</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="../icons/document-validation.svg" alt="" />
+                <span class="px14-fw500 rgb220">Работа и услуги</span>
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="../icons/user.svg" alt="" />
+                <span class="px14-fw500 rgb220">Арбитраж</span>
+              </div>
+              <!-- Ctg header 🚩 -->
+              <span class="px14-fw600 rgb114">Тематическая категория</span>
+
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="../icons/help-circle.svg" alt="" />
+                <span class="px14-fw500 rgb220">Тематические вопросы</span>
+              </div>
+              <div class="category flex-col" style="gap: 10px">
+                <div class="ctg flex-between" style="gap: 14px">
+                  <div class="flex-center" style="gap: 15px">
+                    <img src="../icons/document-validation.svg" alt="" />
+                    <span class="px14-fw500 rgb220">Статьи</span>
+                  </div>
+                  <img
+                    class="hide ctg-closeIcon arrow-down"
+                    src="../icons/arrow-donw.svg"
+                    alt=""
+                  />
+                </div>
+                <!-- Ctg sections 🚩 -->
+                <div class="hide ctg-sections flex-col" style="gap: 10px">
+                  <ul class="flex-col" style="gap: 10px">
+                    <li>
+                      <a class="px13-fw500 rgb220" href="#"
+                        >Способы заработка</a
+                      >
+                    </li>
+                    <li><a class="px13-fw500 rgb220" href="#">SMM</a></li>
+                    <li>
+                      <a class="px13-fw500 rgb220" href="#">Безопасность</a>
+                    </li>
+                    <li>
+                      <a class="px13-fw500 rgb220" href="#">Социальные сети</a>
+                    </li>
+                    <li>
+                      <a class="px13-fw500 rgb220" href="#"
+                        >Авторские курсы заработка</a
+                      >
+                    </li>
+                    <li>
+                      <a class="px13-fw500 rgb220" href="#">Криптовалюты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="category flex-between" style="gap: 14px">
+                <div class="ctg flex-center" style="gap: 15px">
+                  <img src="../icons/user.svg" alt="" />
+                  <span class="px14-fw500 rgb220">Арбитраж</span>
+                </div>
+                <img
+                  class="hide arrow-down"
+                  src="../icons/arrow-donw.svg"
+                  alt=""
+                />
+              </div>
+              <div class="category flex-start-horizontal" style="gap: 14px">
+                <img src="../icons/microsoft.svg" alt="" />
+                <span class="px14-fw500 rgb220">Софт</span>
+              </div>
+            </div>
+          </div>
+          <!-- 3 🚩 -->
+          <div class="sidebar-wrapper flex-col" style="gap: 14px">
+            <div class="category flex-start-horizontal" style="gap: 14px">
+              <img src="../icons/pie-chart.svg" alt="" />
+              <span class="px14-fw600 rgb114">Статистика форума</span>
+            </div>
+            <span class="px14-fw500 rgb220">Тем на форуме: 2523015</span>
+            <span class="px14-fw500 rgb220">Cообщений на форуме: 8214444</span>
+            <span class="px14-fw500 rgb220">Просмотров форума: 29455884</span>
+          </div>
+        </div>
+        <!-- Main Content 🚩 -->
+        <div class="main flex-col" style="gap: 20px">
+          <!-- Entrance 🚩 -->
+          <div
+            class="entrance post-entrance flex-col-start"
+            style="gap: 17px; background-color: var(--bgColor1)"
+          >
+            <div class="entrance-text flex-center" style="gap: 5px">
+              <img src="../icons/gift.svg" alt="" />
+              <h1 class="px16-fw500 rgb220">Section name / Розыгрыши</h1>
+            </div>
+            <p class="px13-fw400 rgb220">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="line"></div>
+            <!-- Filter 🚩 -->
+            <div class="main-wrapper" style="padding: 0 !important">
+              <div class="filter flex-start-horizontal" style="gap: 15px">
+                <img src="../icons/filter.svg" alt="" />
+                <span class="px14-fw500 rgb220">Фильтр:</span>
+                <select
+                  class="filter-select pointer px13-fw400 rgb220"
+                  name=""
+                  id=""
+                >
+                  <option value="">По последнему ответу</option>
+                </select>
+                <div class="filter-icon flex-center">
+                  <img class="pointer" src="../icons/navSetting.svg" alt="" />
+                </div>
+                <div class="filter-icon flex-center">
+                  <img class="pointer" src="../icons/refresh.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Section posts 🚩 -->
+          <div class="section-posts" style="background-color: var(--bgColor1)">
+            <!-- Section post header 🚩 -->
+            <div class="section-post-header flex-between">
+              <div class="section-header-left flex-center" style="gap: 5px">
+                <img src="../icons/topic.svg" alt="" />
+                <span class="px14-fw400 rgb220">Список тем</span>
+              </div>
+              <span class="px14-fw400 rgb220">Последний ответ</span>
+            </div>
+            <div class="line"></div>
+            <!-- Section posts 🚩 -->
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- 🚩 -->
+            <div class="section-post flex-between">
+              <div class="sc-post-left flex-col-start" style="gap: 11px">
+                <h1 class="px14-fw500 rgb220">
+                  Названи теми из разделов форума Названи теми из...
+                </h1>
+                <div class="sc-p-left-bottom flex-center" style="gap: 5px">
+                  <h1 class="px13-fw400 rgb175">
+                    Автор: <span class="px13-fw500 red">shuname</span>
+                  </h1>
+                  <span class="px13-fw400 rgb175">• Четверг в 15:31</span>
+                </div>
+              </div>
+              <div class="sc-post-right flex-col-start" style="gap: 5px">
+                <div class="sc-p-right-user flex-center" style="gap: 3px">
+                  <img src="../images/m.svg" alt="" />
+                  <span class="px16-fw600 red">shuname</span>
+                </div>
+                <span class="px13-fw400 rgb175">Четверг в 15:31</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="section-post flex-center">
+              <div class="move-btns flex-center">
+                <div class="move-icon">
+                  <img src="../icons/arrow-left-double.svg" alt="" />
+                </div>
+                <div class="move-icon">
+                  <img src="../icons/arrow-left.svg" alt="" />
+                </div>
+                <div class="move-btn pointer">
+                  <button class="px15-fw400 rgb220">1</button>
+                </div>
+                <div class="move-btn pointer move-btn-active">
+                  <button class="px15-fw400 rgb220">2</button>
+                </div>
+                <div
+                  class="move-btn pointer"
+                  style="background-color: var(--bgColor5)"
+                >
+                  <button class="px15-fw400 rgb220">3</button>
+                </div>
+                <div class="move-icon">
+                  <img src="../icons/arrow-right.svg" alt="" />
+                </div>
+                <div class="move-icon">
+                  <img src="../icons/arrow-right-double.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

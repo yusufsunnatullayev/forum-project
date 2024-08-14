@@ -1,0 +1,40 @@
+.notification {
+  box-sizing: border-box;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 5px;
+  background: rgb(24, 24, 24);
+  margin-top: 20px;
+}
+
+.notification-header {
+  padding: 23px 16px;
+}
+
+.notification-icon {
+  padding: 20px;
+}
+
+.notification-icon img {
+  width: 74px;
+  height: 74px;
+}
+
+.nt-wrapper {
+  padding: 10px;
+}
+
+.nt-wrapper-btns {
+  padding: 20px 0;
+}
+
+.nt-move-btns {
+  padding: 0 20px;
+  background-color: rgb(39, 39, 39);
+  width: 50%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.nt-move-btns img {
+  cursor: pointer;
+}
